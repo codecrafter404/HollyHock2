@@ -5,6 +5,7 @@ You'll need your SH4 cross compiler to develop applications for the fx-CP400. If
 This only needs to happen once to generate the required object files which will be linked with your application when it's compiled. It isn't necessary to rebuild the SDK itself whenever you change your application code.
 
 `cd` into the `sdk/` directory, and run the `make` command. Ensure the file `sdk.o` is generated - this is the boilerplate code required for your applications to work when compiled.
+**Note:*** If you get an dependency error, you need to set the environments ([this](patching.md)) to successfully build the sdk.
 
 If you'd like a local copy of the SDK documentation, run the `make docs` command. Open `sdk/doc/index.html` to view them.
 
