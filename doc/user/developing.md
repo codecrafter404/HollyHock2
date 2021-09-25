@@ -6,6 +6,8 @@ This only needs to happen once to generate the required object files which will 
 
 `cd` into the `sdk/` directory, and run the `make` command. Ensure the file `sdk.o` is generated - this is the boilerplate code required for your applications to work when compiled.
 
+**Note:** If you get an dependency error, you need to set the environments ([this](patching.md)) to successfully build the sdk.
+
 If you'd like a local copy of the SDK documentation, run the `make docs` command. Open `sdk/doc/index.html` to view them.
 
 ## 2. Start your project
