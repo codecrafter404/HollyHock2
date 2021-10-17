@@ -1,7 +1,7 @@
 # Checksums are SHA256
 VERSION_SPECIFIC_INFO = {
-	'v02.01.2000.0000': {
-		'OSupdateDLL_checksum': '22dc7e129f8840e8bab9490ee96d05c825c98e6060dd27fc66b523ce67180eda',
+	'v02.01.7001.0000': {
+		'OSupdateDLL_checksum': '52cc500a65cd495ab9c0fc642c06510670675a57eaa2eab15e8a744bbe46c67f',
 		'missing_byte_3069_offset': 0x2E88,
 		'missing_byte_3070_offset': 0x2E51
 	}

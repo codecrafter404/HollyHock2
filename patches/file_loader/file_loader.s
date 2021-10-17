@@ -69,15 +69,15 @@ mov.l @r15+, r8
 
 .align 4
 open:
-	.long 0x80057854
+	.long 0x80057874
 fstat:
-	.long 0x8005798E
+	.long 0x800579ae
 read:
-	.long 0x800578A2
+	.long 0x800578c2
 close:
-	.long 0x80057912
+	.long 0x80057932
 PrintStandardErrorString:
-	.long 0x80065998
+	.long 0x80065a9c
 
 buf:
 	.long 0x8CFE0000
