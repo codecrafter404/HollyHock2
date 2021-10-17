@@ -21,11 +21,15 @@ An SDK to write your own applications for the CASIO fx-CP400 graphics calculator
 
 This is by no means a finished project. Like the disclaimer says, use at your own risk! Breaking changes are not out of the question, and should be 100% expected.
 
-<strike>I (@The6P4C) have burned out *hard* on this project, and won't be maintaining it any further. These tools, patches and SDK work only for OS v02.01.7001.0000. The tools are easily updated, but the patches and SDK are **much** more difficult (and half the reason I'm so burned out).</strike>
-I(@Codecrafter404) have updated the SDK and the tools.
+<strike>I (@The6P4C) have burned out *hard* on this project, and won't be maintaining it any further. These tools, patches and SDK work only for OS v02.01.2000.0000. The tools are easily updated, but the patches and SDK are **much** more difficult (and half the reason I'm so burned out).</strike>
+I(@Codecrafter404) have updated the SDK and the tools.(To OS v02.01.7001.0000)
 
 <strike>Please contact @ps100000 regarding this project.</strike>
 You can contact me via Discord(@Codecrafter_404#6203)
+
+# How to update the SDK
+Use my Python Skript and if you need the old firmware updater you can look here: https://tiplanet.org/forum/archives_voir.php?id=2680090.
+DONT FORGET TO ALSO UPDATE THE PATCHES MANUALLY.
 
 ## User Guides
 1. [Patching your firmware](doc/user/patching.md)
