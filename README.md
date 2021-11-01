@@ -6,6 +6,7 @@ The fork isn't marked as it because I've cloned it an created a new repo(GitHub 
 - Added Utils to Easyer find the addresses in newer versions
 - Added TickTackToe to demos
 - Applyed new Addresses
+- A PAUSE function to Tetris Demo App (just for comfort)
 
 # DISCLAIMER
 - I AM NOT RESPONSIBLE FOR ANY DAMAGE YOU MAY DO TO YOUR fx-CP400.  
