@@ -7,7 +7,7 @@
 
 APP_NAME("Tetris")
 APP_DESCRIPTION("A simple implementation of the game Tetris.")
-APP_AUTHOR("De_Coder")
+APP_AUTHOR("De_Coder&Codecrafter_404")
 APP_VERSION("1.0.0")
 
 void print_score(uint32_t score){	//prints to score to the top of the screen
@@ -167,10 +167,38 @@ void main() {
 	
 	print_score(0);
 	
+	bool paused = false;
+
 	while(running){
+		
 		memset(&event, 0, sizeof(event));
 		GetInput(&event, 0x0, 0x12);
-		
+		// Mechanic to pause the game
+		if(paused){
+			Debug_SetCursorPosition(0, 20);
+			Debug_PrintString("PAUSED", false);
+
+			for(int i = 0; i < 4; i++){	//draw fields of the active block
+				draw_square(active_block[i][0], active_block[i][1], block_type);
+			}
+
+			LCD_Refresh();
+
+			if(event.type == EVENT_KEY && event.data.key.direction == KEY_PRESSED && event.data.key.keyCode == KEYCODE_EQUALS){
+				// UnPause the game
+				Debug_SetCursorPosition(0, 20);
+				Debug_PrintString("      ", false);
+				LCD_Refresh();
+				paused = false;
+				continue;
+			}
+			if(event.type == EVENT_KEY && event.data.key.direction == KEY_PRESSED && event.data.key.keyCode == KEYCODE_POWER_CLEAR){
+				paused = false;
+				running = false;
+				continue;
+			}
+			continue;
+		}
 		if(event.type == EVENT_KEY){
 			if(event.data.key.direction == KEY_PRESSED){
 				switch(event.data.key.keyCode){
@@ -300,6 +328,9 @@ void main() {
 					break;
 					case KEYCODE_5:		//block should go down until it hits something
 						down = true;
+					break;
+					case KEYCODE_EQUALS: // pause the game
+						paused = true;
 					break;
 					default:
 					if (event.data.key.keyCode == KEYCODE_POWER_CLEAR){		//close the game
